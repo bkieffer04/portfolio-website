@@ -11,8 +11,8 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
+    setTimeout(() => {
+      return setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
 
@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm('service_x1701qh', 'template_yxhaxec', form.current, 'UDOVeswSFmqDgmggO')
       .then(
         () => {
           alert('Message successfully sent!')
